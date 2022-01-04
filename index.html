@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - BAYE'S Tech.</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="full-img" id="fullImgBox">
+     <img src="images/My desing 1.png" id="fullImg">
+     <span onclick="closefullImg()">X</span>
+</div>
+<div class="img-gallery">
+  <img src="images/My-Image-2.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 1.png" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 2.png" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 3.png" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 4.png" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 5.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 6.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 7.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 8.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 9.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 10.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 11.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 12.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 13.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 14.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 15.jpg" onclick="closeFullImg(this.src)">
+  <img src="images/My desing 16.jpg" onclick="closeFullImg(this.src)">
+</div>
+<script>
+  var fullImgBox = document.getElementById("fullimgBox");
+  var fullImg = document.getElementById("fullimg");
+
+  function openFullImg(pic) {
+    fullImgBox.style.display = "flex"
+    fullImg.src = pic;
+  }
+</script>
+  </body>
+</html>

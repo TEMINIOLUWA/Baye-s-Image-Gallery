@@ -1,0 +1,48 @@
+{
+  margin: 0px;
+  padding: 0px;
+  font-family:sans-serif;
+
+}
+body{
+     background color: : #pink;
+}
+.img-gallery{
+  margin: 80px auto 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 2fr));
+  grid-gap: 25px
+
+}
+.img-gallery img{
+  width: 80%;
+  cursor: pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.7) rotate(-15deg);
+    border-radius: 15px;
+    box-shadow: 0 30px 65px rgba(58,67,126, 0.2);
+}
+.full-img{
+  height: 80vh;
+  width: 80%
+  background: rgb(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: : 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img{
+  width: 80%;
+  max-width: 400px;
+}
+.full-img span{
+  position:
+  top: 5%
+  font-size: 30px
+  color: #fff;
+  cursor: pointer;
+}
